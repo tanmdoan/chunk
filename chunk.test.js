@@ -2,15 +2,15 @@ import chunk from './chunk';
 import {describe, expect, test} from 'vitest';
 
 describe('chunk', () => {
-  test.only('empty array', () => {
+  test('empty array', () => {
     expect(chunk([], 3)).toEqual([]);
   });
 
-  test.only('single-element array', () => {
+  test('single-element array', () => {
     expect(chunk([1], 3)).toEqual([[1]]);
   });
 
-  test.only('size of 1', () => {
+  test('size of 1', () => {
     expect(chunk([1, 2, 3])).toEqual([[1], [2], [3]]);
   });
 
